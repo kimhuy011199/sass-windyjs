@@ -1,0 +1,115 @@
+.navigation {
+  background-color: $color-white;
+  padding: 1.5rem 0;
+  position: fixed;
+  width: 100%;
+  z-index: 200;
+  border-bottom: 1px solid $color-gray-dark-4;
+
+  &__button {
+    cursor: pointer;
+  }
+
+  &__menu-icon {
+    width: 3rem;
+    color: $color-gray-dark-2;
+    display: none;
+
+    @include respond(sm) {
+      display: block;
+      position: absolute;
+      top: 2rem;
+      right: 2rem;
+    }
+  }
+
+  &__logo-box {
+    float: left;
+
+    @include respond(sm) {
+      float: none;
+    }
+  }
+
+  &__logo {
+    width: 12rem;
+    padding: 0.2rem 0;
+  }
+
+  &__nav {
+    float: right;
+    margin: 1rem;
+
+    @include respond(sm) {
+      transition: all 0.3s;
+      float: none;
+      margin: 0rem;
+      height: 100vh;
+      position: absolute;
+      top: 7rem;
+      left: -100%;
+      background-color: $color-white;
+    }
+  }
+
+  &__repsonsive-nav {
+    left: 0;
+    top: 7.2rem;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    @include respond(md) {
+      &:not(:last-child) {
+        margin-right: 2.5rem;
+      }
+    }
+
+    @include respond(sm) {
+      display: block;
+      &:not(:last-child) {
+        margin: 0;
+        margin-bottom: 5rem;
+      }
+      &:first-child {
+        margin-top: 6rem;
+      }
+      text-align: center;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      font-size: 1.5rem;
+      color: $color-gray-dark-2;
+      transition: color 0.2s;
+
+      @include respond(sm) {
+        text-transform: uppercase;
+        font-size: 2rem;
+      }
+    }
+
+    &:hover,
+    &:active {
+      color: $color-primary;
+    }
+
+    &--icon {
+      font-size: 2rem;
+    }
+  }
+}

@@ -1,0 +1,41 @@
+.feature-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 2rem;
+
+  &__container {
+    border-radius: 0.8rem;
+    border: 1px solid $color-gray-light-2;
+    padding: 3rem;
+    transition: all 0.2s;
+    cursor: pointer;
+    background-color: $color-white;
+
+    &:hover {
+      border: 1px solid transparent;
+      box-shadow: 1rem 1rem 4rem rgba($color-black, 0.1);
+      transform: translateY(-0.7rem);
+    }
+
+    &:hover .feature-box__link {
+      text-decoration: underline;
+      color: $color-primary-light;
+    }
+  }
+
+  &__icon {
+    color: $color-primary;
+    width: 5rem;
+    margin-left: -1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      font-size: 1.4rem;
+      text-decoration: none;
+      color: $color-primary;
+    }
+  }
+}

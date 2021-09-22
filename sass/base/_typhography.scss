@@ -1,0 +1,78 @@
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: $color-gray-dark;
+}
+
+.heading-primary {
+  color: $color-black;
+  font-size: 10rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.2rem;
+  margin-bottom: 3rem;
+  display: inline-block;
+
+  animation: moveInLeft 0.8s;
+
+  @include respond(sm) {
+    font-size: 6rem;
+  }
+
+  &-sub {
+    font-size: 1.8rem;
+    margin-bottom: 4rem;
+
+    animation: moveInRight 0.8s;
+
+    @include respond(lg) {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @include respond(sm) {
+      font-size: 1.6rem;
+    }
+  }
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  color: $color-black;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+
+  &-sub {
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 5rem;
+
+    @include respond(sm) {
+      text-align: center;
+    }
+  }
+
+  @include respond(sm) {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: $color-black;
+  margin-bottom: 1rem;
+
+  &-sub {
+    font-size: 1.4rem;
+  }
+}
+
+.paragraph {
+  font-size: 1.4rem;
+  color: $color-black;
+  margin-bottom: 1.2rem;
+}

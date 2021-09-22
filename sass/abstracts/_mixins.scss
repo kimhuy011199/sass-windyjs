@@ -1,0 +1,32 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absoluteCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin respond($breakpoint) {
+  @if ($breakpoint == sm) {
+    @media (max-width: 40em) {
+      @content;
+    } // 640px/16px (default font)
+  }
+  @if ($breakpoint == md) {
+    @media (max-width: 48em) {
+      @content;
+    } // 768px/16px (default font)
+  }
+  @if ($breakpoint == lg) {
+    @media (max-width: 62.5em) {
+      @content;
+    } // 1000px/16px (default font)
+  }
+}

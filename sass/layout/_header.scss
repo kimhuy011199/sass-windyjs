@@ -1,0 +1,48 @@
+.header {
+  position: relative;
+  height: 85vh;
+
+  @include respond(sm) {
+    height: 100vh;
+  }
+
+  &__textbox {
+    @include absoluteCenter;
+    top: 55%;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__doc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(sm) {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  }
+
+  &__copy {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border-radius: 0.7rem;
+    font-weight: 300;
+    margin: 0 1rem;
+    border: 1px solid $color-gray-light-2;
+    display: flex;
+    background-color: $color-gray-light-1;
+    align-items: center;
+
+    @include respond(sm) {
+      height: 5rem;
+    }
+
+    svg {
+      width: 2rem;
+      margin-left: 1rem;
+    }
+  }
+}

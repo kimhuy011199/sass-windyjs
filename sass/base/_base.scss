@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  /* default browser font size is 16px x 62.5% = 10px => easy to use rem */
+
+  @include respond(lg) {
+    font-size: 56.25%; //1rem = 9px => 9/16 = 56.25%
+  }
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.horizontal-container {
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  @include respond(lg) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+::selection {
+  background-color: $color-primary;
+  color: $color-white;
+}

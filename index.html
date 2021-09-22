@@ -1,0 +1,460 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.svg" />
+    <script defer src="js/script.js"></script>
+    <title>Windy.js - The Javascript Framework For Production</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <div class="horizontal-container">
+        <div class="navigation__logo-box">
+          <a href="#"
+            ><img class="navigation__logo" src="img/logo.svg" alt="Logo"
+          /></a>
+        </div>
+        <div class="navigation__button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="navigation__menu-icon"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </div>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Why Windy.js</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Documentation</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Deploy</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Updates</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link"
+                ><i class="fab fa-github navigation__link--icon"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="header__textbox">
+        <div class="horizontal-container">
+          <h1 class="heading-primary">
+            The JS framework for <span class="gradient-text">production.</span>
+          </h1>
+          <p class="heading-primary-sub">
+            Windy.js gives you the best developer experience with all the
+            features you need for production: hybrid static & server rendering,
+            TypeScript support, smart bundling, route pre-fetching, and more. No
+            config needed.
+          </p>
+          <div class="header__doc">
+            <div class="header__copy">
+              <code>$ yarn create windy-app</code>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <a href="#" class="btn btn--blue">Documentation</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-features">
+        <div class="u-center-text">
+          <h2 class="heading-secondary">Batteries included. No limitations.</h2>
+          <p class="heading-secondary-sub">
+            The world’s leading companies use and love Windy.js
+          </p>
+        </div>
+        <div class="horizontal-container">
+          <div class="feature-box">
+            <div class="feature-box__container">
+              <div class="feature-box__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="heading-tertiary">Image Optimization</h3>
+              <p class="paragraph">
+                Image and Automatic Image Optimization with instant builds.
+              </p>
+              <a href="#" class="feature-box__link">Documentation &rarr;</a>
+            </div>
+            <div class="feature-box__container">
+              <div class="feature-box__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="heading-tertiary">TypeScript Support</h3>
+              <p class="paragraph">
+                Automatic TypeScript configuration and compilation.
+              </p>
+              <a href="#" class="feature-box__link">Documentation &rarr;</a>
+            </div>
+            <div class="feature-box__container">
+              <div class="feature-box__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="heading-tertiary">API Routes</h3>
+              <p class="paragraph">
+                Optionally create API endpoints to provide backend
+                functionality.
+              </p>
+              <a href="#" class="feature-box__link">Documentation &rarr;</a>
+            </div>
+            <div class="feature-box__container">
+              <div class="feature-box__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M16 4v12l-4-2-4 2V4M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"
+                  />
+                </svg>
+              </div>
+              <h3 class="heading-tertiary">Hybrid: SSG and SSR</h3>
+              <p class="paragraph">
+                Pre-render pages at build time (SSG) or request time (SSR) in
+                project.
+              </p>
+              <a href="#" class="feature-box__link">Documentation &rarr;</a>
+            </div>
+            <div class="feature-box__container">
+              <div class="feature-box__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+                  />
+                </svg>
+              </div>
+              <h3 class="heading-tertiary">Code Bundling</h3>
+              <p class="paragraph">
+                Optimized bundle splitting algorithm created by the Google
+                Chrome team.
+              </p>
+              <a href="#" class="feature-box__link">Documentation &rarr;</a>
+            </div>
+            <div class="feature-box__container">
+              <div class="feature-box__icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1"
+                    d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"
+                  />
+                </svg>
+              </div>
+              <h3 class="heading-tertiary">Fast Deploy</h3>
+              <p class="paragraph">
+                Fast, reliable live-editing experience, as proven at Facebook
+                scale.
+              </p>
+              <a href="#" class="feature-box__link">Documentation &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-deploy">
+        <div class="horizontal-container">
+          <div class="u-center-text">
+            <h2 class="heading-secondary">Deploy anywhere, anytime.</h2>
+            <p class="heading-secondary-sub">
+              Deploy on the platform made for Windy.js.
+            </p>
+          </div>
+          <div class="section-deploy__container">
+            <div class="section-deploy__para-container">
+              <p class="paragraph">
+                Windy.js is open source. Deploy it to managed services like
+                Digital Ocean, Heroku, and Render, or your own custom
+                infrastructure.
+              </p>
+              <p class="paragraph">
+                The source of truth is your codebase, so Keystone fits naturally
+                into your git-based development workflow, and you can use all
+                the CI & Automation tooling you already know.
+              </p>
+              <a href="#" class="btn btn--blue u_margin-top-small"
+                >Deploy for free</a
+              >
+            </div>
+            <img
+              class="section-deploy__image"
+              src="img/deploy.jpg"
+              alt="Deploy image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-metro">
+        <div class="horizontal-container">
+          <div class="section-metro__container">
+            <div class="section-metro__box">
+              <h4 class="section-metro__title">12B+</h4>
+              <p class="section-metro__sub">Requests per week</p>
+            </div>
+            <div class="section-metro__box">
+              <h4 class="section-metro__title">70</h4>
+              <p class="section-metro__sub">Cities</p>
+            </div>
+            <div class="section-metro__box">
+              <h4 class="section-metro__title">160+</h4>
+              <p class="section-metro__sub">Contributors</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-community">
+        <div class="horizontal-container">
+          <div class="section-community__container">
+            <img
+              class="section-community__image"
+              src="img/community.jpg"
+              alt="Deploy image"
+            />
+            <div class="section-community__para-container">
+              <h3 class="section-community__heading">
+                Learn with others in a supportive community.
+              </h3>
+              <p class="paragraph">
+                Share your work and get the help you need in the Windy.js
+                community Slack: an inclusive space to share ideas and explore
+                what‘s possible.
+              </p>
+              <a href="#" class="btn btn--blue u_margin-top-small"
+                >Join our community</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-subscribe">
+        <div class="horizontal-container">
+          <div class="section-subscribe__container">
+            <div class="section-subscribe__content">
+              <h2 class="heading-secondary">
+                Subscribe to our mailing list to stay in the loop!
+              </h2>
+              <p class="heading-secondary-sub u-margin-bottom-0">
+                Join the Windy.js newsletter and stay updated on new releases
+                and features, guides, and case studies.
+              </p>
+            </div>
+            <div class="section-subscribe__form">
+              <form action="#">
+                <div class="section-subscribe__form-group">
+                  <div class="section-subscribe__form-icon">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    type="email"
+                    class="section-subscribe__form-input"
+                    placeholder="Your email"
+                    id="email"
+                    required
+                  />
+                </div>
+                <div class="section-subscribe__form-group">
+                  <button class="btn btn--blue section-subscribe__form-button">
+                    Subscribe
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="horizontal-container">
+        <div class="footer__container">
+          <div class="footer__navigation">
+            <p class="footer__nav-title">About Windy.js</p>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Our Story</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">For Developer</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">For Organisations</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">For Content Management</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__navigation">
+            <p class="footer__nav-title">Resource</p>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Get Started</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Documentation</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">API Reference</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Updates</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__navigation">
+            <p class="footer__nav-title">Community</p>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Join Our Stack</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Windy.js on Github</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Windy.js on Twitter</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contribution</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__navigation">
+            <p class="footer__nav-title">Legal</p>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Term</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">&nbsp;</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">&nbsp;</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="horizontal-container">
+        <div class="footer__bottom">
+          <img src="img/logo.svg" class="footer__logo" alt="Logo" />
+          <p class="footer__copyright">Made with love by @kimhuy011199</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
